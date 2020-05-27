@@ -1,11 +1,12 @@
+
 package main
 
 import(
 	"fmt"
 	"time"
 	"math/rand"
+	
 )
-
 func howLong(seed int64)int{ //return a random value between 0-31
 	rand.Seed(seed)
 	x:=rand.Intn(31)
@@ -47,3 +48,4 @@ func main(){
 	fmt.Printf("During these days of work, you will be allowed to consume only mineral water.\n")}
 	
 }
+
