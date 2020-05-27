@@ -1,0 +1,9 @@
+Go language programming excercise h3a on course http://terokarvinen.com/2020/go-programming-course-2020-w22/
+
+Program writes log file based on filename and duration in seconds from flags. If the provided filename exists, it will be appended.
+
+
+Based on examples from
+https://yourbasic.org/golang/log-to-file/
+https://golangbyexample.com/check-if-file-or-directory-exists-go/
+https://golang.org/pkg/os/
