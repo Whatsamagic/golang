@@ -1,0 +1,15 @@
+Homework exercise from: http://terokarvinen.com/2020/go-programming-course-2020-w22/#h2
+
+Program beertime.go  picks a random number of days (0-31) and checks what day it will be from now, if it is during weekend 
+the user is allowed to have a beer. 
+Othewrise he/she should stick with mineral water.
+
+The 64bit program is cross compiled for linux, Win and Mac as well:
+beertime_mac: Mach-O 64-bit x86_64 executable
+beertime: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, Go BuildID=4uJR9MSAQCL2uAy8-9Wp/mTM9yWOFXHZ2RNmxedwW/WWWfMsEuj5j0KRKY8sup/IGGfKN7ufCryy5s3VHh8, not stripped
+beertime_win: PE32+ executable (console) x86-64 (stripped to external PDB), for MS Windows
+
+Based on:
+https://tour.golang.org/basics/1
+https://golang.org/pkg/fmt/
+https://golang.org/pkg/time/
