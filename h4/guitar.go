@@ -7,19 +7,19 @@ import ("fmt"
 )
 
 func eSlice()[]string{
-	return []string{"E","F","f#/gb","G","g#/ab","A","a#/bb","B","C","c#/db","D","d#/eb"}
+	return []string{"E","F","f#/gb","G","g#/ab","A","a#/bb","B","C","c#/db","D","d#/eb","E"}
 }
 func aSlice() []string{
-	return []string{"A","a#/bb","B","C","c#/db","D","d#/eb","E","F","f#/gb","G","g#/ab"}
+	return []string{"A","a#/bb","B","C","c#/db","D","d#/eb","E","F","f#/gb","G","g#/ab","A"}
 }
 func dSlice() []string{
-	return []string{"D","d#/eb","E","F","f#/gb","G","g#/ab","A","a#/bb","B","C","c#/db"}
+	return []string{"D","d#/eb","E","F","f#/gb","G","g#/ab","A","a#/bb","B","C","c#/db","D"}
 }
 func gSlice() []string{
-	return []string{"G","g#/ab","A","a#/bb","B","C","c#/db","D","d#/eb","E","F","f#/gb"}
+	return []string{"G","g#/ab","A","a#/bb","B","C","c#/db","D","d#/eb","E","F","f#/gb","G"}
 }
 func bSlice() []string{
-	return []string{"B","C","c#/db","D","d#/eb","E","F","f#/gb","G","g#/ab","A","a#/bb"}
+	return []string{"B","C","c#/db","D","d#/eb","E","F","f#/gb","G","g#/ab","A","a#/bb","B"}
 }
 
 
@@ -37,8 +37,8 @@ func fretboard(){ //display simplified guitar fretboard with fret numbers
 	} 
 
 func  showNotes(input string,onestring []string){ //print all requested full tone on fretboard
-	tmpSlice := make([]string,12)
-	for i:=0; i<12; i++{
+	tmpSlice := make([]string,13)
+	for i:=0; i<13; i++{
 		if onestring[i]==input {
 		tmpSlice[i]=input
 		}else{
@@ -48,12 +48,12 @@ func  showNotes(input string,onestring []string){ //print all requested full ton
 	}
 
 func hideNotes(input string, onestring []string){ //print only single mystery note
-	tmpSlice := make([]string,12)
+	tmpSlice := make([]string,13)
 	if len(onestring) < 12 {
-		for i:=0; i<12; i++ {
+		for i:=0; i<13; i++ {
 		tmpSlice[i]=" "
 		}}else{
-			for i:=0; i<12; i++ {
+			for i:=0; i<13; i++ {
 				if onestring[i]==input {
 				tmpSlice[i]="*"
 				}else{
@@ -126,6 +126,7 @@ func guessNote(x,y int){
 }
 
 func whichNote(x string){	// show all selected notes on fretboard
+	fmt.Println("0 1 2 3 4 5 6 7 8 9 10 11 12")
 
 	showNotes(x,eSlice())
 	showNotes(x,bSlice())
