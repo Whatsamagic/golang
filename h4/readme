@@ -1,0 +1,8 @@
+Programming exercise on course https://terokarvinen.com/2020/go-programming-course-2020-w22/
+
+guitar.go prints the 12 frets of guitar and displays notes per each string on standard tuning.
+Program is aimed for learning the notes on fretboard. 
+
+Based on examples from:
+https://github.com/golang/go/wiki/SliceTricks
+https://blog.golang.org/slices
