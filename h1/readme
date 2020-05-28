@@ -1,0 +1,14 @@
+Excercises creted during http://terokarvinen.com/2020/go-programming-course-2020-w22/
+
+tour1.go gives a random integer number up to value 10 and uses time as seed. Prints current time in a few different ways
+
+based on:
+https://tour.golang.org/basics/1
+
+tour4.go is an example of basic function. Function takes two integers values and returns the sum of those.
+
+based on:
+https://tour.golang.org/basics/4
+
+h1a.go is an example of flags usage. Program takes parameter input of a "feature" and prints output that it isn't available.
+Homework: http://terokarvinen.com/2020/go-programming-course-2020-w22/#h1
